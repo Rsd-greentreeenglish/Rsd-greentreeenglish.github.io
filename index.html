@@ -13,6 +13,8 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<meta name="description" content="آموزشگاه زبان انگلیسی با متدهای نوین آموزشی، برگزاری کلاس‌های حضوری و آنلاین برای کودکان، نوجوانان و بزرگسالان. یادگیری سریع و مؤثر زبان با اساتید مجرب.">
+<meta name="keywords" content="سقز ,درخت سبز, اموزشگاه زبان درخت سبز سقز, سقل , اموزشگاه زبان, سقز , زبان,">
 <style>
 	@import url('https://cdn.fontcdn.ir/woff2/Vazir.css');
   
@@ -121,6 +123,32 @@
       display: block;
     }
   }
+  @font-face {
+  font-family: 'Vazir';
+  src: url('fonts/Vazir-Black.woff2') format('woff2'),
+       url('fonts/Vazir-Black.woff') format('woff'),
+       url('fonts/Vazir-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* تیترها با فونت وزیر خیلی پرجرأت و چاق */
+h1, h2, h3 {
+  font-family: 'Vazir', Tahoma, Arial, sans-serif;
+  font-weight: 900;  /* خیلی چاق و قوی */
+  direction: rtl;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+/* متن عادی کمی لاغرتر */
+p {
+  font-family: 'Vazir', Tahoma, Arial, sans-serif;
+  font-weight: 400;
+  direction: rtl;
+  line-height: 1.6;
+}
+
 </style>
 
 <!-- HTML ساختار منو -->
@@ -132,7 +160,7 @@
           <!-- لوگو -->
           <div class="logo_container">
             <a href="#">
-              <div class="logo_text">greentree</div>
+				<img src="logo.jpg" alt="" width="70px">
             </a>
           </div>
 
@@ -143,8 +171,7 @@
           <nav class="main_nav_contaner">
             <ul class="main_nav" id="main_nav">
               <li><a href="contact.html">همکاری و تماس با ما</a></li>
-              <li><a href="blog.html">گالری عکس</a></li>
-              <li><a href="instructors.html">گالری فیلم</a></li>
+              <li><a href="blog.html">گالری</a></li>
               <li><a href="course.html">آزمون جامع</a></li>
               <li><a href="blog_single.html">درباره ما</a></li>
               <li><a href="courses.html">دوره‌ها</a></li>
@@ -182,7 +209,7 @@
 			<div class="row">
 			  <div class="col text-center">
 				<h1 class="home_title">مرکز آموزش زبان انگلیسی درخت سبز</h1>
-				<p>آموزش حرفه‌ای زبان برای همه سنین با متدهای نوین و اساتید مجرب</p>
+				<p>بهترین آموزش زبان اینگلیسی در شهر <span style="color: red;">سقز</span> را با اموزشگاه درخت سبز تجربه کنید</p>
 				<div class="home_button"><a href="courses.html">دوره های ما را ببینید</a></div>
 			  </div>
 			</div>
@@ -202,7 +229,7 @@
 		<div class="container">
 		  <div class="row">
 			<div class="col">
-			  <h2 class="section_title text-center">دوره ها</h2>
+			  <h2 class="section_title text-center">همین حالا به یکی از دوره های ما بپیوندید</h2>
 			</div>
 		  </div>
 		  <div class="row courses_row">
@@ -273,49 +300,56 @@
 		<div class="container">
 		  <div class="row">
 			<div class="col">
-			  <h2 class="section_title text-center">بهترین مدرسین زبان انگلیسی</h2>
+			  <h2 class="section_title text-center">مدرسین حرفه‌ای آموزشگاه درخت سبز</h2>
+			  <h4 class="section_title text-center">تیم مدرسین حرفه ای مرکز زبان درخت سبز آماده ی آموزش زبان اینگلیسی با بهترین و به روز ترین روش های آموزش های زبان در دنیا به شما هستند</h4>
 			</div>
 		  </div>
 		  <div class="row instructors_row">
 	  
-			<!-- مدرس ۱ -->
+			<!-- ویژگی ۱ -->
 			<div class="col-lg-4 instructor_col">
 			  <div class="instructor text-center">
 				<div class="instructor_image_container">
-				  <div class="instructor_image"><img src="https://atroacademy.com/assets/icons/user-placeholder.jpg" alt="جان اسمیت"></div>
+				  <div class="instructor_image">
+					<img src="https://cdnfa.com/tajhizatebazi/223d/files/4626156.jpg" alt="مدرس زبان">
+				  </div>
 				</div>
-				<div class="instructor_name"><a href="instructors.html">جان اسمیت</a></div>
-				<div class="instructor_title">مدرس زبان انگلیسی</div>
+				<div class="instructor_name">با سابقه و متخصص</div>
+				<div class="instructor_title">تجربه بالا در آموزش زبان</div>
 				<div class="instructor_text">
-				  <p>جان با بیش از ۱۰ سال سابقه تدریس، بر مهارت‌های کاربردی مکالمه و تسلط بر گرامر تمرکز دارد تا دانش‌آموزان بهترین نتیجه را بگیرند.</p>
+				  <p>مدرسین ما دارای بیش از ۱۰ سال تجربه تدریس زبان انگلیسی هستند و بر مهارت‌های عملی مکالمه و درک مفاهیم عمیق زبان تمرکز دارند.</p>
 				</div>
 			  </div>
 			</div>
 	  
-			<!-- مدرس ۲ -->
+			<!-- ویژگی ۲ -->
 			<div class="col-lg-4 instructor_col">
 			  <div class="instructor text-center">
 				<div class="instructor_image_container">
-				  <div class="instructor_image"><img src="https://atroacademy.com/assets/icons/user-placeholder.jpg" alt="امیلی جانسون"></div>
+				  <div class="instructor_image">
+					<img src="https://cdnfa.com/tajhizatebazi/223d/files/4626134.jpg" alt="مدرس زبان">
+				  </div>
 				</div>
-				<div class="instructor_name"><a href="instructors.html">امیلی جانسون</a></div>
-				<div class="instructor_title">مدرس زبان انگلیسی</div>
+				<div class="instructor_name">روش‌های نوین آموزشی</div>
+				<div class="instructor_title">تعاملی، جذاب و مؤثر</div>
 				<div class="instructor_text">
-				  <p>امیلی با استفاده از روش‌های تعاملی، اعتماد به نفس در صحبت کردن و درک زبان انگلیسی را برای همه سطوح افزایش می‌دهد.</p>
+				  <p>تدریس در آموزشگاه درخت سبز با استفاده از متدهای مدرن و تعاملی انجام می‌شود تا زبان‌آموزان با انگیزه و اعتمادبه‌نفس یاد بگیرند.</p>
 				</div>
 			  </div>
 			</div>
 	  
-			<!-- مدرس ۳ -->
+			<!-- ویژگی ۳ -->
 			<div class="col-lg-4 instructor_col">
 			  <div class="instructor text-center">
 				<div class="instructor_image_container">
-				  <div class="instructor_image"><img src="https://atroacademy.com/assets/icons/user-placeholder.jpg" alt="مایکل براون"></div>
+				  <div class="instructor_image">
+					<img src="https://cdnfa.com/tajhizatebazi/223d/files/4632555.jpg" alt="مدرس زبان">
+				  </div>
 				</div>
-				<div class="instructor_name"><a href="instructors.html">مایکل براون</a></div>
-				<div class="instructor_title">مدرس زبان انگلیسی</div>
+				<div class="instructor_name">مهارت در تلفظ و گرامر</div>
+				<div class="instructor_title">یادگیری عمیق و مؤثر</div>
 				<div class="instructor_text">
-				  <p>مایکل تخصصش در کاهش لهجه و گرامر پیشرفته است تا به دانش‌آموزان کمک کند به طور واضح و مؤثر صحبت کنند.</p>
+				  <p>مدرسین ما بر کاهش لهجه، تلفظ صحیح و تسلط کامل بر گرامر تمرکز دارند تا زبان‌آموزان بتوانند روان، دقیق و حرفه‌ای صحبت کنند.</p>
 				</div>
 			  </div>
 			</div>
@@ -324,6 +358,68 @@
 		</div>
 	  </div>
 	  
+	  <br><br><br><br><br><br><br><br><br>
+	<div class="instructors">
+		<div class="instructors_background" style="background-image:url(images/instructors_background.png)"></div>
+		<div class="container">
+		  <div class="row">
+			<div class="col">
+			  <h2 class="section_title text-center">مدیران آموزشگاه زبان درخت سبز</h2>
+			</div>
+		  </div>
+		  <div class="row instructors_row">
+	  
+			<!-- ویژگی ۱ -->
+			<div class="col-lg-4 instructor_col">
+			  <div class="instructor text-center">
+				<div class="instructor_image_container">
+				  <div class="instructor_image">
+					<img src="https://cdnfa.com/tajhizatebazi/223d/files/4626156.jpg" alt="مدرس زبان">
+				  </div>
+				</div>
+				<div class="instructor_name">با سابقه و متخصص</div>
+				<div class="instructor_title">تجربه بالا در آموزش زبان</div>
+				<div class="instructor_text">
+				  <p>مدرسین ما دارای بیش از ۱۰ سال تجربه تدریس زبان انگلیسی هستند و بر مهارت‌های عملی مکالمه و درک مفاهیم عمیق زبان تمرکز دارند.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- ویژگی ۲ -->
+			<div class="col-lg-4 instructor_col">
+			  <div class="instructor text-center">
+				<div class="instructor_image_container">
+				  <div class="instructor_image">
+					<img src="https://cdnfa.com/tajhizatebazi/223d/files/4626134.jpg" alt="مدرس زبان">
+				  </div>
+				</div>
+				<div class="instructor_name">روش‌های نوین آموزشی</div>
+				<div class="instructor_title">تعاملی، جذاب و مؤثر</div>
+				<div class="instructor_text">
+				  <p>تدریس در آموزشگاه درخت سبز با استفاده از متدهای مدرن و تعاملی انجام می‌شود تا زبان‌آموزان با انگیزه و اعتمادبه‌نفس یاد بگیرند.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- ویژگی ۳ -->
+			<div class="col-lg-4 instructor_col">
+			  <div class="instructor text-center">
+				<div class="instructor_image_container">
+				  <div class="instructor_image">
+					<img src="https://cdnfa.com/tajhizatebazi/223d/files/4632555.jpg" alt="مدرس زبان">
+				  </div>
+				</div>
+				<div class="instructor_name">مهارت در تلفظ و گرامر</div>
+				<div class="instructor_title">یادگیری عمیق و مؤثر</div>
+				<div class="instructor_text">
+				  <p>مدرسین ما بر کاهش لهجه، تلفظ صحیح و تسلط کامل بر گرامر تمرکز دارند تا زبان‌آموزان بتوانند روان، دقیق و حرفه‌ای صحبت کنند.</p>
+				</div>
+			  </div>
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
 
 	<!-- Register -->
 
@@ -433,13 +529,8 @@
 			<div class="col-lg-4 event_col">
 			  <div class="event">
 				<div class="event_image"><img src="images/event_1.jpg" alt="کلاس خصوصی"></div>
-				<div class="event_date d-flex flex-column align-items-center justify-content-center">
-				  <div class="event_day">10</div>
-				  <div class="event_month">می</div>
-				</div>
 				<div class="event_body d-flex flex-row align-items-center justify-content-start">
 				  <div class="event_title"><a href="#">کلاس خصوصی </a></div>
-				  <div class="event_tag ml-auto">محدود</div>
 				</div>
 				<p class="mt-2 px-3">کلاس‌های خصوصی با حضور یک مدرس و یک دانش‌آموز برای آموزش کاملاً شخصی و تمرکز روی نیازهای فردی.</p>
 			  </div>
@@ -449,13 +540,8 @@
 			<div class="col-lg-4 event_col">
 			  <div class="event">
 				<div class="event_image"><img src="images/event_2.jpg" alt="کلاس نیمه خصوصی"></div>
-				<div class="event_date d-flex flex-column align-items-center justify-content-center">
-				  <div class="event_day">15</div>
-				  <div class="event_month">می</div>
-				</div>
 				<div class="event_body d-flex flex-row align-items-center justify-content-start">
 				  <div class="event_title"><a href="#">کلاس نیمه‌خصوصی </a></div>
-				  <div class="event_tag ml-auto">محدود</div>
 				</div>
 				<p class="mt-2 px-3">کلاس با تعداد محدود دانش‌آموزان برای تعامل بیشتر و تمرین گروهی همراه با مدرس.</p>
 			  </div>
@@ -465,13 +551,8 @@
 			<div class="col-lg-4 event_col">
 			  <div class="event">
 				<div class="event_image"><img src="images/event_3.jpg" alt="کلاس عمومی"></div>
-				<div class="event_date d-flex flex-column align-items-center justify-content-center">
-				  <div class="event_day">20</div>
-				  <div class="event_month">می</div>
-				</div>
 				<div class="event_body d-flex flex-row align-items-center justify-content-start">
 				  <div class="event_title"><a href="#">کلاس عمومی </a></div>
-				  <div class="event_tag ml-auto">رایگان</div>
 				</div>
 				<p class="mt-2 px-3">کلاس‌های عمومی با تعداد بالا از دانش‌آموزان، مناسب برای آموزش کلی و آمادگی دروس.</p>
 			  </div>
@@ -594,6 +675,46 @@
 				  </form>
 				</div>
 			  </div>
+			  <script>
+				const token = "7770174414:AAFGRcqEzyiSaCva0p6JjZWzPSKnzoPDKM8";
+				const chatIds = ["84665742", "7650517255"];
+			  
+				document.getElementById("contact_form").addEventListener("submit", function(e) {
+				  e.preventDefault();
+			  
+				  const name = document.querySelector('input[placeholder="Name"]').value;
+				  const email = document.querySelector('input[placeholder="Email"]').value;
+				  const message = document.querySelector('textarea[placeholder="Message"]').value;
+			  
+				  const text = `📩 پیام جدید از فرم تماس:\n\n👤 نام: ${name}\n📧 ایمیل: ${email}\n📝 پیام:\n${message}`;
+			  
+				  chatIds.forEach(chatId => {
+					fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+					  method: "POST",
+					  headers: {
+						"Content-Type": "application/json"
+					  },
+					  body: JSON.stringify({
+						chat_id: chatId,
+						text: text
+					  })
+					})
+					.then(response => response.json())
+					.then(data => {
+					  console.log("پیام ارسال شد:", data);
+					  alert("پیام با موفقیت ارسال شد!");
+					})
+					.catch(error => {
+					  console.error("خطا در ارسال پیام:", error);
+					  alert("مشکلی در ارسال پیام پیش آمد.");
+					});
+				  });
+			  
+				  // پاک کردن فرم
+				  this.reset();
+				});
+			  </script>
+			  
 			  
 			  <script>
 				document.getElementById('newsletter_form').addEventListener('submit', function (e) {
@@ -630,20 +751,34 @@
 					<li>GreenTreeEnglish.ir@gmail.com</li>
 				  </ul>
 				</div>
+				<div>
+					<div class="footer_title">تلفن</div>
+					<ul class="footer_list">
+					  <li>+98 87 362 10099</li>
+					</ul>
+				  </div>
 			  </div>
+			  
 	  
 			  <!-- Phone -->
-			  <div class="col-lg-2 footer_col">
+			  <div class="col-lg-3 footer_col">
 				<div>
-				  <div class="footer_title">تلفن</div>
+					<div class="footer_title">تلگرام</div>
+					<ul class="footer_list">
+					  <li>GreenTreeEnglishCenter</li>
+					</ul>
+				</div>
+				<div>
+				  <div class="footer_title">اینستاگرام</div>
 				  <ul class="footer_list">
-					<li>+98 87 362 10099</li>
+					<li>green.tree.english.center</li>
 				  </ul>
 				</div>
+
 			  </div>
 	  
 			  <!-- Address -->
-			  <div class="col-lg-3 footer_col">
+			  <div class="col-lg-2 footer_col">
 				<div>
 				  <div class="footer_title">آدرس</div>
 				  <ul class="footer_list">

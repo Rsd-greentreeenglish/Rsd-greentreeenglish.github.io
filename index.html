@@ -1,827 +1,495 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>اموزشگاه زبان درخت سبز</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Lingua project">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/responsive.css">
-<meta name="description" content="آموزشگاه زبان انگلیسی با متدهای نوین آموزشی، برگزاری کلاس‌های حضوری و آنلاین برای کودکان، نوجوانان و بزرگسالان. یادگیری سریع و مؤثر زبان با اساتید مجرب.">
-<meta name="keywords" content="سقز ,درخت سبز, اموزشگاه زبان درخت سبز سقز, سقل , اموزشگاه زبان, سقز , زبان,">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Sentra - Free Bootstrap Theme</title>
+        
+<!-- 
+
+Sentra Template
+
+https://templatemo.com/tm-518-sentra
+
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/ir-fonts@master/dist/ir-nastaliq/iran-nastaliq.css" rel="stylesheet">
+
 <style>
-	@import url('https://cdn.fontcdn.ir/woff2/Vazir.css');
-  
-	body {
-	  text-align: right !important;
-	  font-family: 'Vazir', Tahoma, Arial, sans-serif !important;
-	}
-  </style>
-  
-</head>
-<body>
-
-<div class="super_container">
-
-	<!-- Header -->
-
-	<header class="header">
-			
-		<!-- Top Bar -->
-		<div class="top_bar">
-			<div class="top_bar_container">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
-								<div class="top_bar_phone"><span class="top_bar_title">phone:</span>+98 87 362 10099</div>
-								<div class="top_bar_right ml-auto">
-
-									<!-- Language -->
-									<!-- Social -->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>				
-		</div>
-
-		<!-- Header Content -->
-<!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<!-- استایل ساده برای منوی همبرگری -->
-<style>
-  .header_container {
-    background: #fff;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-  }
-
-  .logo_text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #1c1c1c;
-  }
-
-  .main_nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-  }
-
-  .main_nav li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-
-  .main_nav li.active a {
-    color: #007bff;
-  }
-
-  .hamburger {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #333;
-  }
-
-  .main_nav_contaner {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-
-  @media (max-width: 768px) {
-    .main_nav {
-      flex-direction: column;
-      background: #f7f7f7;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      display: none;
-      padding: 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    /* کل صفحه راست‌چین */
+    body {
+        direction: rtl;
+        text-align: right;
+        font-family: "IranNastaliq", serif !important;
     }
 
-    .main_nav.active {
-      display: flex;
+    /* فقط متن‌ها راست‌چین بشن (نه کل div ها) */
+    h1, h2, h3, h4, h5, h6,
+    p, span, a, label, li, em {
+        font-family: inherit !important;
+        direction: rtl;
+        text-align: right;
     }
 
-    .hamburger {
-      display: block;
+    /* عکس‌ها و باکس‌ها دست نزن */
+    img, div, section, article {
+        direction: ltr;
+        text-align: left;
     }
-  }
-  @font-face {
-  font-family: 'Vazir';
-  src: url('fonts/Vazir-Black.woff2') format('woff2'),
-       url('fonts/Vazir-Black.woff') format('woff'),
-       url('fonts/Vazir-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
+    .sidebar-navigation {
+    float: left !important;
+    right: auto !important;
+    left: 0 !important;
+    direction: ltr !important;
+    text-align: left !important;
 }
-
-/* تیترها با فونت وزیر خیلی پرجرأت و چاق */
-h1, h2, h3 {
-  font-family: 'Vazir', Tahoma, Arial, sans-serif;
-  font-weight: 900;  /* خیلی چاق و قوی */
-  direction: rtl;
-  line-height: 1.2;
-  margin-bottom: 0.5em;
-}
-
-/* متن عادی کمی لاغرتر */
-p {
-  font-family: 'Vazir', Tahoma, Arial, sans-serif;
-  font-weight: 400;
-  direction: rtl;
-  line-height: 1.6;
+.text-block p{
+    font-size: 13px;
+    color: black;
 }
 
 </style>
 
-<!-- HTML ساختار منو -->
-<div class="header_container">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="header_content d-flex flex-row align-items-center justify-content-between">
-          <!-- لوگو -->
-          <div class="logo_container">
-            <a href="#">
-				<img src="logo.jpg" alt="" width="70px">
-            </a>
-          </div>
 
-          <!-- آیکون همبرگری -->
-          <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+<body>
 
-          <!-- منو -->
-          <nav class="main_nav_contaner">
-            <ul class="main_nav" id="main_nav">
-              <li><a href="contact.html">همکاری و تماس با ما</a></li>
-              <li><a href="blog.html">گالری</a></li>
-              <li><a href="course.html">آزمون جامع</a></li>
-              <li><a href="blog_single.html">درباره ما</a></li>
-              <li><a href="courses.html">دوره‌ها</a></li>
-              <li class="active"><a href="index.html">خانه</a></li>
-            </ul>
-          </nav>
+
+
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">green tree english</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#top">خانه</a></li>
+                        <li><a href="#featured">درباره ما</a></li>
+                        <li><a href="#app">برنامه ما</a></li>
+                        <li><a href="#video">با ما بیشتر اشنا شوید</a></li>
+                        <li><a href="#exam">ازمون جامع</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a href="#" style="text-align: center;">آموزشگاه <em>زبان درخت سبز</em> سقز</a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#top">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            خانه
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#featured">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            درباره ما
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#app">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            برنامه ما
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#video">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            با ما بیشتر اشنا شوید
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#exam">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            ازمون جامع
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            تماس با ما
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+<ul class="social-icons">
+    <li><a href="https://www.instagram.com/green.tree.english.center" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="https://t.me/greentreeenglishcenter" target="_blank"><i class="fa fa-telegram"></i></a></li>
+</ul>
+
         </div>
-      </div>
+
+<div class="slider">
+    <div class="Modern-Slider content-section" id="top">
+        <!-- Item 1 -->
+        <div class="item item-1">
+            <div class="img-fill">
+                <div class="image"></div>
+                <div class="info">
+                    <div>
+                        <h1>آموزشگاه زبان درخت سبز<br>بزرگ‌ترین مرکز تخصصی زبان در سقز</h1>
+                        <p>از سال ۱۳۹۰ با رویکرد کیفیت، نوآوری و توسعه مهارت‌های زبان‌آموزان فعالیت می‌کنیم.</p>
+                        <div class="white-button button">
+                            <a href="#featured">بیشتر بدانید</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Item 1 -->
+
+        <!-- Item 2 -->
+        <div class="item item-2">
+            <div class="img-fill">
+                <div class="image"></div>
+                <div class="info">
+                    <div>
+                        <h1>مسیر یادگیری حرفه‌ای<br>برای هر زبان‌آموز</h1>
+                        <p>با بهره‌گیری از اساتید مجرب و کلاس‌های مجهز، یادگیری زبان را آسان، لذت‌بخش و حرفه‌ای کرده‌ایم.</p>
+                        <div class="white-button button">
+                            <a href="#featured">جزئیات دوره‌ها</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Item 2 -->
+
+        <!-- Item 3 -->
+        <div class="item item-3">
+            <div class="img-fill">
+                <div class="image"></div>
+                <div class="info">
+                    <div>
+                        <h1>دوره‌های حضوری و آنلاین<br>با فرصت‌های گسترده یادگیری</h1>
+                        <p>ما خانواده‌ای از استادان و زبان‌آموزان پرتلاش هستیم که با کارگاه‌ها و رویدادهای فرهنگی فراتر از آموزش عمل می‌کنیم.</p>
+                        <div class="white-button button">
+                            <a href="#featured">بیشتر بدانید</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Item 3 -->
     </div>
-  </div>
 </div>
 
-<!-- اسکریپت فعال‌سازی منوی همبرگری -->
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const nav = document.getElementById('main_nav');
-
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
 
 
-	</header>
+        <div class="page-content">
+<section id="featured" class="content-section">
+    <div class="section-heading">
+        <h1>درباره <em> ما</h1>
 
-	<!-- Menu -->
+    </div>
+
+<div class="section-content">
+    <div class="text-block" style="background:#fff; padding:40px; border-radius:12px; line-height:2; font-size:1.2em; box-shadow:0 0 25px rgba(0,0,0,0.1);">
+        <p>
+            اولین و بزرگ‌ترین مرکز آموزش زبان در سقز، آموزشگاه زبان درخت سبز، از سال ۱۳۹۰ با رویکردی مبتنی بر کیفیت، نوآوری و توسعه مهارت‌های زبان‌آموزان فعال است.
+        </p>
+        <p>
+            آموزشگاه زبان درخت سبز به عنوان نخستین و بزرگ‌ترین مرکز تخصصی زبان در شهر سقز، فعالیت خود را از سال ۱۳۹۰ آغاز کرده است. در طول بیش از یک دهه، توانسته جایگاه ویژه‌ای در دل مردم سقز پیدا کند و به مرکزی معتبر برای یادگیری زبان و توسعه مهارت‌های ارتباطی تبدیل شود. هدف ما فراتر از آموزش صرف بوده و همواره تلاش کرده‌ایم محیطی ایجاد کنیم که زبان‌آموزان بتوانند با انگیزه، خلاقیت و توانایی‌های خود، آینده‌ای روشن بسازند.
+        </p>
+
+        <p>
+            از همان ابتدا باور داشتیم که آموزش واقعی زبان فراتر از کتاب و جزوه است و به معنای شکل‌دهی مسیر یادگیری و آماده‌سازی نسل آینده است. زمانی که دسترسی به آموزش‌های کاربردی محدود بود، آموزشگاه زبان درخت سبز با همکاری اساتید مجرب و دلسوز مسیر تازه‌ای در آموزش زبان باز کرد و با تمرکز بر کیفیت، نوآوری و تخصص، صدها دوره در زمینه‌های زبان‌های خارجی، مهارت‌های گفتاری و شنیداری، و آمادگی آزمون‌های بین‌المللی برگزار کرده است.
+        </p>
+
+        <p>
+            هزاران زبان‌آموز موفق سقزی مسیر تحصیلی و شغلی خود را از همین آموزشگاه آغاز کرده‌اند و افتخار ما همراهی و حمایت از آن‌ها در مسیر پیشرفت و موفقیتشان است. آموزشگاه زبان درخت سبز با تجهیز کلاس‌ها به امکانات مدرن، فضای آموزشی مناسب و برنامه‌ریزی دقیق، یادگیری زبان را برای همه آسان، لذت‌بخش و حرفه‌ای کرده است.
+        </p>
+
+        <p>
+            علاوه بر آموزش‌های حضوری، دوره‌های آنلاین نیز ارائه شده تا هر زبان‌آموز بتواند در هر شرایطی از فرصت یادگیری بهره‌مند شود. ما تنها یک آموزشگاه نیستیم؛ خانواده‌ای هستیم از استادان دلسوز و زبان‌آموزان پرتلاش که با برگزاری کارگاه‌های تخصصی، رویدادهای فرهنگی و دوره‌های کارآفرینی، همواره فراتر از آموزش عمل کرده و به توسعه پایدار جامعه سقز کمک می‌کنیم.
+        </p>
+
+        <p>
+            آموزشگاه زبان درخت سبز جایی است که هر فرد با انگیزه می‌تواند استعدادهای خود را شکوفا کرده، مهارت‌های لازم برای آینده را بیاموزد و مسیر موفقیت را هموار کند. ما متعهدیم تا محیطی فراهم کنیم که یادگیری زبان، خلاقیت، رشد شخصی و حرفه‌ای به بالاترین سطح خود برسد و هر زبان‌آموز پس از گذراندن دوره‌ها، آماده ورود به جامعه‌ای پویا و حرفه‌ای باشد.
+        </p>
+
+        <!-- بخش دوره‌ها -->
+        <h2>دوره‌های آموزشی زبان</h2>
+        <h3>دوره مبتدی</h3>
+        <p>
+            در این دوره مبتدی، با اصول پایه زبان آشنا می‌شوید و مهارت‌های ضروری برای شروع یادگیری را کسب می‌کنید. مناسب برای کسانی که تازه شروع کرده‌اند و می‌خواهند به صورت گام به گام پیشرفت کنند.
+        </p>
+
+        <h3>دوره متوسط</h3>
+        <p>
+            این دوره متوسط، برای زبان‌آموزانی طراحی شده که اصول اولیه را یاد گرفته‌اند و می‌خواهند مهارت‌های شنیداری، گفتاری و نوشتاری خود را تقویت کنند. تمرکز بر مکالمات روزمره و ساختارهای پیچیده‌تر است.
+        </p>
+
+        <h3>دوره پیشرفته</h3>
+        <p>
+            در دوره پیشرفته، مهارت‌های زبانی شما به سطح بالاتری می‌رسد و توانایی برقراری ارتباط در موقعیت‌های حرفه‌ای و تخصصی را خواهید داشت. تمرکز بر تلفظ صحیح، درک عمیق‌تر زبان و مهارت‌های نوشتاری پیشرفته است.
+        </p>
+
+        <!-- بخش انواع کلاس‌ها -->
+        <h2>انواع کلاس‌ها</h2>
+        <h3>کلاس عمومی</h3>
+        <p>
+            کلاس‌های عمومی با تعداد بالای زبان‌آموزان، مناسب برای آموزش کلی و آمادگی دروس. تعامل گروهی و یادگیری از تجربه دیگران در این کلاس‌ها بالا است.
+        </p>
+
+        <h3>کلاس خصوصی</h3>
+        <p>
+            کلاس خصوصی با حضور یک مدرس و یک زبان‌آموز، برای آموزش کاملاً شخصی و تمرکز بر نیازهای فردی. سرعت یادگیری و تمرین‌ها مطابق توان زبان‌آموز تنظیم می‌شود.
+        </p>
+
+        <h3>کلاس نیمه‌خصوصی</h3>
+        <p>
+            کلاس‌های نیمه‌خصوصی با تعداد محدود زبان‌آموزان، برای تعامل بیشتر، تمرین گروهی و بهره‌گیری از راهنمایی مدرس در یک گروه کوچک و صمیمی.
+        </p>
+    </div>
+</div>
+</section>
+<br>
+<section id="app" class="content-section" style="padding: 60px 0; text-align: center; background-color: #f9f9f9;">
+    <div class="section-heading">
+        <h1>برنامه <em>ما را نصب کنید</em></h1>
+    </div>
+    <p style="margin: 20px 0; font-size: 1.2em; text-align: center;">برای دسترسی به کارنامه خود و گالری ها و فایل صوتی ها </p>
+    <a href="https://example.com/app-download" target="_blank" 
+       style="display: inline-block; padding: 18px 40px; font-size: 1.3em; color: #fff; background-color: #007bff; border-radius: 12px; text-decoration: none; transition: background-color 0.3s;">
+        دانلود برنامه
+    </a>
+</section>
 
 
-	
-	<!-- Home -->
-	<div class="home">
-		<div class="home_background" style="background-image: url('images/index_background.jpg');"></div>
-		<div class="home_content">
-		  <div class="container">
-			<div class="row">
-			  <div class="col text-center">
-				<h1 class="home_title">مرکز آموزش زبان انگلیسی درخت سبز</h1>
-				<p>بهترین آموزش زبان اینگلیسی در شهر <span style="color: red;">سقز</span> را با اموزشگاه درخت سبز تجربه کنید</p>
-				<div class="home_button"><a href="courses.html">دوره های ما را ببینید</a></div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	  
+<br><br><br><br><br><br>
+</section>
 
-	<!-- Language -->
-
-	  
-
-	<!-- Courses -->
-
-	<div class="courses">
-		<div class="courses_background"></div>
-		<div class="container">
-		  <div class="row">
-			<div class="col">
-			  <h2 class="section_title text-center">همین حالا به یکی از دوره های ما بپیوندید</h2>
-			</div>
-		  </div>
-		  <div class="row courses_row">
-	  
-			<!-- Course مبتدی -->
-			<div class="col-lg-4 course_col">
-			  <div class="course">
-				<div class="course_image"><img src="images/course_1.jpg" alt=""></div>
-				<div class="course_body">
-				  <div class="course_title"><a href="course.html">مبتدی</a></div>
-				  <div class="course_text">
-					<p>در این دوره مبتدی، شما با اصول پایه زبان آشنا می‌شوید و مهارت‌های ضروری برای شروع یادگیری را کسب می‌کنید. مناسب برای کسانی که تازه شروع کرده‌اند و می‌خواهند به صورت گام به گام پیشرفت کنند.</p>
-				  </div>
-				</div>
-				<div class="course_footer d-flex flex-row align-items-center justify-content-start">
-				  <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
-				  <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>5</span></div>
-				  <!-- <div class="course_mark course_free trans_200"><a href="#">Free</a></div> -->
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Course متوسط -->
-			<div class="col-lg-4 course_col">
-			  <div class="course">
-				<div class="course_image"><img src="images/course_2.jpg" alt=""></div>
-				<div class="course_body">
-				  <div class="course_title"><a href="course.html">متوسط</a></div>
-				  <div class="course_text">
-					<p>این دوره متوسط، برای زبان‌آموزانی طراحی شده که اصول اولیه را یاد گرفته‌اند و می‌خواهند مهارت‌های شنیداری، گفتاری و نوشتاری خود را تقویت کنند. تمرکز بر مکالمات روزمره و ساختارهای پیچیده‌تر است.</p>
-				  </div>
-				</div>
-				<div class="course_footer d-flex flex-row align-items-center justify-content-start">
-				  <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
-				  <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>5</span></div>
-				  <!-- <div class="course_mark course_free trans_200"><a href="#">Free</a></div> -->
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Course پیشرفته -->
-			<div class="col-lg-4 course_col">
-			  <div class="course">
-				<div class="course_image"><img src="images/course_3.jpg" alt=""></div>
-				<div class="course_body">
-				  <div class="course_title"><a href="course.html">پیشرفته</a></div>
-				  <div class="course_text">
-					<p>در دوره پیشرفته، مهارت‌های زبانی شما به سطح بالاتری می‌رسد و توانایی برقراری ارتباط در موقعیت‌های حرفه‌ای و تخصصی را خواهید داشت. تمرکز بر تلفظ صحیح، درک عمیق‌تر زبان و مهارت‌های نوشتاری پیشرفته است.</p>
-				  </div>
-				</div>
-				<div class="course_footer d-flex flex-row align-items-center justify-content-start">
-				  <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
-				  <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>5</span></div>
-				  <!-- <div class="course_mark trans_200"><a href="#">$45</a></div> -->
-				</div>
-			  </div>
-			</div>
-	  
-		  </div>
-		</div>
-	  </div>
-	  
-
-	<!-- Instructors -->
-
-	<div class="instructors">
-		<div class="instructors_background" style="background-image:url(images/instructors_background.png)"></div>
-		<div class="container">
-		  <div class="row">
-			<div class="col">
-			  <h2 class="section_title text-center">مدرسین حرفه‌ای آموزشگاه درخت سبز</h2>
-			  <h4 class="section_title text-center">تیم مدرسین حرفه ای مرکز زبان درخت سبز آماده ی آموزش زبان اینگلیسی با بهترین و به روز ترین روش های آموزش های زبان در دنیا به شما هستند</h4>
-			</div>
-		  </div>
-		  <div class="row instructors_row">
-	  
-			<!-- ویژگی ۱ -->
-			<div class="col-lg-4 instructor_col">
-			  <div class="instructor text-center">
-				<div class="instructor_image_container">
-				  <div class="instructor_image">
-					<img src="https://cdnfa.com/tajhizatebazi/223d/files/4626156.jpg" alt="مدرس زبان">
-				  </div>
-				</div>
-				<div class="instructor_name">با سابقه و متخصص</div>
-				<div class="instructor_title">تجربه بالا در آموزش زبان</div>
-				<div class="instructor_text">
-				  <p>مدرسین ما دارای بیش از ۱۰ سال تجربه تدریس زبان انگلیسی هستند و بر مهارت‌های عملی مکالمه و درک مفاهیم عمیق زبان تمرکز دارند.</p>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- ویژگی ۲ -->
-			<div class="col-lg-4 instructor_col">
-			  <div class="instructor text-center">
-				<div class="instructor_image_container">
-				  <div class="instructor_image">
-					<img src="https://cdnfa.com/tajhizatebazi/223d/files/4626134.jpg" alt="مدرس زبان">
-				  </div>
-				</div>
-				<div class="instructor_name">روش‌های نوین آموزشی</div>
-				<div class="instructor_title">تعاملی، جذاب و مؤثر</div>
-				<div class="instructor_text">
-				  <p>تدریس در آموزشگاه درخت سبز با استفاده از متدهای مدرن و تعاملی انجام می‌شود تا زبان‌آموزان با انگیزه و اعتمادبه‌نفس یاد بگیرند.</p>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- ویژگی ۳ -->
-			<div class="col-lg-4 instructor_col">
-			  <div class="instructor text-center">
-				<div class="instructor_image_container">
-				  <div class="instructor_image">
-					<img src="https://cdnfa.com/tajhizatebazi/223d/files/4632555.jpg" alt="مدرس زبان">
-				  </div>
-				</div>
-				<div class="instructor_name">مهارت در تلفظ و گرامر</div>
-				<div class="instructor_title">یادگیری عمیق و مؤثر</div>
-				<div class="instructor_text">
-				  <p>مدرسین ما بر کاهش لهجه، تلفظ صحیح و تسلط کامل بر گرامر تمرکز دارند تا زبان‌آموزان بتوانند روان، دقیق و حرفه‌ای صحبت کنند.</p>
-				</div>
-			  </div>
-			</div>
-	  
-		  </div>
-		</div>
-	  </div>
-	  
-	  <br><br><br><br><br><br><br><br><br>
-	<div class="instructors">
-		<div class="instructors_background" style="background-image:url(images/instructors_background.png)"></div>
-		<div class="container">
-		  <div class="row">
-			<div class="col">
-			  <h2 class="section_title text-center">مدیران آموزشگاه زبان درخت سبز</h2>
-			</div>
-		  </div>
-		  <div class="row instructors_row">
-	  
-			<!-- ویژگی ۱ -->
-			<div class="col-lg-4 instructor_col">
-			  <div class="instructor text-center">
-				<div class="instructor_image_container">
-				  <div class="instructor_image">
-					<img src="https://cdnfa.com/tajhizatebazi/223d/files/4626156.jpg" alt="مدرس زبان">
-				  </div>
-				</div>
-				<div class="instructor_name">با سابقه و متخصص</div>
-				<div class="instructor_title">تجربه بالا در آموزش زبان</div>
-				<div class="instructor_text">
-				  <p>مدرسین ما دارای بیش از ۱۰ سال تجربه تدریس زبان انگلیسی هستند و بر مهارت‌های عملی مکالمه و درک مفاهیم عمیق زبان تمرکز دارند.</p>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- ویژگی ۲ -->
-			<div class="col-lg-4 instructor_col">
-			  <div class="instructor text-center">
-				<div class="instructor_image_container">
-				  <div class="instructor_image">
-					<img src="https://cdnfa.com/tajhizatebazi/223d/files/4626134.jpg" alt="مدرس زبان">
-				  </div>
-				</div>
-				<div class="instructor_name">روش‌های نوین آموزشی</div>
-				<div class="instructor_title">تعاملی، جذاب و مؤثر</div>
-				<div class="instructor_text">
-				  <p>تدریس در آموزشگاه درخت سبز با استفاده از متدهای مدرن و تعاملی انجام می‌شود تا زبان‌آموزان با انگیزه و اعتمادبه‌نفس یاد بگیرند.</p>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- ویژگی ۳ -->
-			<div class="col-lg-4 instructor_col">
-			  <div class="instructor text-center">
-				<div class="instructor_image_container">
-				  <div class="instructor_image">
-					<img src="https://cdnfa.com/tajhizatebazi/223d/files/4632555.jpg" alt="مدرس زبان">
-				  </div>
-				</div>
-				<div class="instructor_name">مهارت در تلفظ و گرامر</div>
-				<div class="instructor_title">یادگیری عمیق و مؤثر</div>
-				<div class="instructor_text">
-				  <p>مدرسین ما بر کاهش لهجه، تلفظ صحیح و تسلط کامل بر گرامر تمرکز دارند تا زبان‌آموزان بتوانند روان، دقیق و حرفه‌ای صحبت کنند.</p>
-				</div>
-			  </div>
-			</div>
-	  
-		  </div>
-		</div>
-	  </div>
-
-	<!-- Register -->
-
-	<div class="register">
-		<div class="container">
-		  <div class="row">
-			
-			<!-- فرم همکاری -->
-	  
-			<div class="col-lg-6">
-				<div class="register_form_container">
-				  <div class="register_form_title">همکاری با ما
-					<br>
-					حتما فیلترشکن روشن باشد
-				  </div>
-				  <form id="register_form" class="register_form">
-					<div class="row register_row">
-					  <div class="col-lg-6 register_col">
-						<input type="text" class="form_input" id="name" placeholder="نام و نام خانوادگی" required>
-					  </div>
-					  <div class="col-lg-6 register_col">
-						<input type="email" class="form_input" id="email" placeholder="ایمیل" required>
-					  </div>
-					  <div class="col-lg-6 register_col">
-						<input type="tel" class="form_input" id="phone" placeholder="شماره تماس">
-					  </div>
-					  <div class="col-lg-6 register_col">
-						<input type="url" class="form_input" id="website" placeholder="آدرس سایت یا شبکه‌های اجتماعی">
-					  </div>
-					  <div class="col-12 register_col">
-						<textarea class="form_input" id="skills" placeholder="تجربه و مهارت‌های خود را به طور خلاصه بنویسید" rows="4"></textarea>
-					  </div>
-					  <div class="col-12 register_col">
-						<button type="submit" class="form_button trans_200">ارسال درخواست</button>
-					  </div>
-					</div>
-				  </form>
-				</div>
-			  </div>
-			  
-			  <script>
-				document.getElementById('register_form').addEventListener('submit', function (e) {
-				  e.preventDefault();
-			  
-				  const name = document.getElementById('name').value.trim();
-				  const email = document.getElementById('email').value.trim();
-				  const phone = document.getElementById('phone').value.trim();
-				  const website = document.getElementById('website').value.trim();
-				  const skills = document.getElementById('skills').value.trim();
-			  
-				  const message = `📥 درخواست همکاری جدید:\n\n👤 نام و نام خانوادگی: ${name}\n📧 ایمیل: ${email}\n📞 شماره تماس: ${phone}\n🌐 وب‌سایت / شبکه اجتماعی: ${website}\n🛠️ مهارت‌ها:\n${skills}`;
-			  
-				  const token = "7770174414:AAFGRcqEzyiSaCva0p6JjZWzPSKnzoPDKM8";
-				  const chatIds = ["84665742", "7650517255"];
-			  
-				  chatIds.forEach(chatId => {
-					fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-					  method: "POST",
-					  headers: { 'Content-Type': 'application/json' },
-					  body: JSON.stringify({ chat_id: chatId, text: message })
-					})
-					.then(response => {
-					  if (response.ok) {
-						console.log("پیام با موفقیت ارسال شد.");
-					  } else {
-						console.error("خطا در ارسال پیام:", response.statusText);
-					  }
-					});
-				  });
-			  
-				  alert("درخواست شما با موفقیت ارسال شد.");
-				  document.getElementById('register_form').reset();
-				});
-			  </script>
-			  
-
-	  
-			<!-- بخش زمان ثبت نام -->
-	  
-			<div class="col-lg-6">
-			  <div class="register_timer_container">
-				<div class="register_timer_title">همین حالا ثبت نام کنید</div>
-				<div class="register_timer_text">
-				  <p>اگر به دنبال همکاری به عنوان مدرس هستید، فرم زیر را پر کنید تا در سریع‌ترین زمان با شما تماس بگیریم و شما را به جمع تیم ما دعوت کنیم.</p>
-				</div>
-
-			  </div>
-			</div>
-	  
-		  </div>
-		</div>
-	  </div>
-	  
-
-	<!-- Events -->
-
-	<div class="events">
-		<div class="container">
-		  <div class="row">
-			<div class="col">
-			  <h2 class="section_title text-center">انواع کلاس‌ها</h2>
-			</div>
-		  </div>
-		  <div class="row events_row">
-			
-			<!-- کلاس خصوصی -->
-			<div class="col-lg-4 event_col">
-			  <div class="event">
-				<div class="event_image"><img src="images/event_1.jpg" alt="کلاس خصوصی"></div>
-				<div class="event_body d-flex flex-row align-items-center justify-content-start">
-				  <div class="event_title"><a href="#">کلاس خصوصی </a></div>
-				</div>
-				<p class="mt-2 px-3">کلاس‌های خصوصی با حضور یک مدرس و یک دانش‌آموز برای آموزش کاملاً شخصی و تمرکز روی نیازهای فردی.</p>
-			  </div>
-			</div>
-	  
-			<!-- کلاس نیمه خصوصی -->
-			<div class="col-lg-4 event_col">
-			  <div class="event">
-				<div class="event_image"><img src="images/event_2.jpg" alt="کلاس نیمه خصوصی"></div>
-				<div class="event_body d-flex flex-row align-items-center justify-content-start">
-				  <div class="event_title"><a href="#">کلاس نیمه‌خصوصی </a></div>
-				</div>
-				<p class="mt-2 px-3">کلاس با تعداد محدود دانش‌آموزان برای تعامل بیشتر و تمرین گروهی همراه با مدرس.</p>
-			  </div>
-			</div>
-	  
-			<!-- کلاس عمومی -->
-			<div class="col-lg-4 event_col">
-			  <div class="event">
-				<div class="event_image"><img src="images/event_3.jpg" alt="کلاس عمومی"></div>
-				<div class="event_body d-flex flex-row align-items-center justify-content-start">
-				  <div class="event_title"><a href="#">کلاس عمومی </a></div>
-				</div>
-				<p class="mt-2 px-3">کلاس‌های عمومی با تعداد بالا از دانش‌آموزان، مناسب برای آموزش کلی و آمادگی دروس.</p>
-			  </div>
-			</div>
-	  
-		  </div>
-		</div>
-	  </div>
-
-	  
-	  
-
-	<!-- Blog -->
-
-	<div class="blog">
-		<div class="container">
-		  <div class="row row-lg-eq-height">
-			
-			<!-- Blog Left -->
-			<div class="col-lg-6">
-			  <div class="blog_left">
-				<div class="blog_title">گالری تصاویر</div>
-				<div class="blog_text">
-				  <p>در این بخش مجموعه‌ای از تصاویر کلاس‌ها، فعالیت‌ها و رویدادهای مدرسه را ببینید.</p>
-				</div>
-				<div class="blog_categories">
-				  <div class="row categories_row">
-	  
-					<!-- Category -->
-					<div class="col-md-4 blog_category_col">
-					  <a href="gallery.html">
-						<div class="blog_category">
-						  <div class="blog_category_image"><img src="https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg" alt="کلاس‌های خصوصی"></div>
-						  <div class="blog_category_title">کلاس‌های خصوصی</div>
-						</div>
-					  </a>
-					</div>
-	  
-					<!-- Category -->
-					<div class="col-md-4 blog_category_col">
-					  <a href="gallery.html">
-						<div class="blog_category">
-						  <div class="blog_category_image"><img src="https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg" alt="کلاس‌های عمومی"></div>
-						  <div class="blog_category_title">کلاس‌های عمومی</div>
-						</div>
-					  </a>
-					</div>
-	  
-					<!-- Category -->
-					<div class="col-md-4 blog_category_col">
-					  <a href="gallery.html">
-						<div class="blog_category">
-						  <div class="blog_category_image"><img src="https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg" alt="فعالیت‌های آموزشی"></div>
-						  <div class="blog_category_title">فعالیت‌های آموزشی</div>
-						</div>
-					  </a>
-					</div>
-	  
-					<!-- Category -->
-					<div class="col-md-4 blog_category_col">
-					  <a href="gallery.html">
-						<div class="blog_category">
-						  <div class="blog_category_image"><img src="https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg" alt="رویدادها و جشن‌ها"></div>
-						  <div class="blog_category_title">رویدادها و جشن‌ها</div>
-						</div>
-					  </a>
-					</div>
-	  
-					<!-- Category -->
-					<div class="col-md-4 blog_category_col">
-					  <a href="gallery.html">
-						<div class="blog_category">
-						  <div class="blog_category_image"><img src="https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg" alt="آموزش زبان"></div>
-						  <div class="blog_category_title">آموزش زبان</div>
-						</div>
-					  </a>
-					</div>
-	  	  
-					<div class="col-md-4 blog_category_col">
-						<a href="gallery.html">
-						  <div class="blog_category">
-							<div class="blog_category_image"><img src="https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg" alt="آموزش زبان"></div>
-							<div class="blog_category_title">آزمون جامع</div>
-						  </div>
-						</a>
-					  </div>
-
-				  </div>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Blog Right -->
-	  
-			<div class="col-lg-6">
-			  <div class="blog_right">
-				<div class="blog_image" style="background-image:url(https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg)"></div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	  
-
-	<!-- Footer -->
-
-	<footer class="footer">
-		<div class="footer_body">
-		  <div class="container">
-			<div class="row">
-	  
-			  <!-- Newsletter -->
-			  <div class="col-lg-3 footer_col">
-				<div class="newsletter_container d-flex flex-column align-items-start justify-content-end">
-				  <div class="footer_logo mb-auto"><a href="#">فیلترشکن روشن باشد</a></div>
-				  <div class="footer_title">شماره موبایل خود را وارد کنید تا در کانال تلگرام عضو شوید</div>
-				  <form id="newsletter_form" class="newsletter_form">
-					<input type="tel" id="newsletter_phone" class="newsletter_input" placeholder="شماره تماس خود را وارد کنید" required>
-					<button type="submit" class="newsletter_button"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-				  </form>
-				</div>
-			  </div>
-			  <script>
-				const token = "7770174414:AAFGRcqEzyiSaCva0p6JjZWzPSKnzoPDKM8";
-				const chatIds = ["84665742", "7650517255"];
-			  
-				document.getElementById("contact_form").addEventListener("submit", function(e) {
-				  e.preventDefault();
-			  
-				  const name = document.querySelector('input[placeholder="Name"]').value;
-				  const email = document.querySelector('input[placeholder="Email"]').value;
-				  const message = document.querySelector('textarea[placeholder="Message"]').value;
-			  
-				  const text = `📩 پیام جدید از فرم تماس:\n\n👤 نام: ${name}\n📧 ایمیل: ${email}\n📝 پیام:\n${message}`;
-			  
-				  chatIds.forEach(chatId => {
-					fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-					  method: "POST",
-					  headers: {
-						"Content-Type": "application/json"
-					  },
-					  body: JSON.stringify({
-						chat_id: chatId,
-						text: text
-					  })
-					})
-					.then(response => response.json())
-					.then(data => {
-					  console.log("پیام ارسال شد:", data);
-					  alert("پیام با موفقیت ارسال شد!");
-					})
-					.catch(error => {
-					  console.error("خطا در ارسال پیام:", error);
-					  alert("مشکلی در ارسال پیام پیش آمد.");
-					});
-				  });
-			  
-				  // پاک کردن فرم
-				  this.reset();
-				});
-			  </script>
-			  
-			  
-			  <script>
-				document.getElementById('newsletter_form').addEventListener('submit', function (e) {
-				  e.preventDefault();
-			  
-				  const phone = document.getElementById('newsletter_phone').value.trim();
-				  const token = "7770174414:AAFGRcqEzyiSaCva0p6JjZWzPSKnzoPDKM8";
-				  const chatIds = ["84665742", "7650517255"];
-				  const message = `📥 فرم عضویت کانال:\n📱 شماره موبایل واردشده:\n${phone}`;
-			  
-				  chatIds.forEach(chatId => {
-					fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-					  method: "POST",
-					  headers: { 'Content-Type': 'application/json' },
-					  body: JSON.stringify({ chat_id: chatId, text: message })
-					})
-					.then(response => {
-					  if (!response.ok) {
-						console.error("خطا در ارسال به تلگرام:", response.statusText);
-					  }
-					});
-				  });
-			  
-				  alert("شماره شما با موفقیت ارسال شد. برای ورود به کانال، دکمه زیر را بزنید.");
-				  document.getElementById('newsletter_form').reset();
-				});
-			  </script>
-			  
-			  <!-- Email -->
-			  <div class="col-lg-2 footer_col">
-				<div>
-				  <div class="footer_title">ایمیل</div>
-				  <ul class="footer_list">
-					<li>GreenTreeEnglish.ir@gmail.com</li>
-				  </ul>
-				</div>
-				<div>
-					<div class="footer_title">تلفن</div>
-					<ul class="footer_list">
-					  <li>+98 87 362 10099</li>
-					</ul>
-				  </div>
-			  </div>
-			  
-	  
-			  <!-- Phone -->
-			  <div class="col-lg-3 footer_col">
-				<div>
-					<div class="footer_title">تلگرام</div>
-					<ul class="footer_list">
-					  <li>GreenTreeEnglishCenter</li>
-					</ul>
-				</div>
-				<div>
-				  <div class="footer_title">اینستاگرام</div>
-				  <ul class="footer_list">
-					<li>green.tree.english.center</li>
-				  </ul>
-				</div>
-
-			  </div>
-	  
-			  <!-- Address -->
-			  <div class="col-lg-2 footer_col">
-				<div>
-				  <div class="footer_title">آدرس</div>
-				  <ul class="footer_list">
-					<li>کردستان , سقز , چهارراه آزادگان</li>
-				  </ul>
-				</div>
-			  </div>
-	  
-			</div>
-		  </div>
-		</div>
-		<div class="copyright">
-		  <div class="container">
-			<div class="row">
-			  <div class="col">
-				<div class="copyright_content d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-start">
-				  <div class="cr">
-					©<script>document.write(new Date().getFullYear());</script> تمامی حقوق محفوظ است | طراحی و ساخته شده توسط 
-					<a href="https://rasandesign.ir" target="_blank" rel="noopener">راسان دیزاین</a>
-				  </div>
-				  <div class="cr_right ml-md-auto">
-					<div class="footer_social">
-					  <span class="cr_social_title">ما را دنبال کنید</span>
-					  <ul>
-						<li><a href="https://t.me/s/GreenTreeEnglishCenter"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.instagram.com/green.tree.english.center/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					  </ul>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </footer>
-	  
+            <section id="video" class="content-section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+        <h1 style="text-align: center;">با ما<em> اشنا شوید</h1>
+                        </div>
+<div class="text-content">
+    <p style="text-align: center;">برای درک بهتر و تجربه‌ی عملی، با ما همراه شوید و ویدیوی زیر را تماشا کنید!</p>
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="js/custom.js"></script>
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="box-video">
+                            <div class="bg-video" style="background-image: url(https://unsplash.imgix.net/photo-1425036458755-dc303a604201?fit=crop&fm=jpg&q=75&w=1000);">
+                                <div class="bt-play">Play</div>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="100%" height="520" src="https://persian13.asset.aparat.com/aparat-video/983ccd70ca722cf3cf4673eff7fc09ad57096066-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImQ3MGUwMWRhNDhlODNmZDQ4OTgzMjI4YzM3YTUwMWViIiwiZXhwIjoxNzYzMTUwMzY2LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.0GB6ziWBrdu9E2ePCCtjQEwPGywdBHnLEhYfSLaGdYY" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<section id="exam" class="content-section">
+    <div class="section-heading">
+        <h1>آزمون<em> جامع </em>درخت سبز</h1>
+
+
+    </div>
+
+<div class="section-content">
+    <div class="text-block" style="background:#fff; padding:40px; border-radius:12px; line-height:2; font-size:1.15em; box-shadow:0 0 25px rgba(0,0,0,0.1);">
+        <p>
+            آزمون جامع زبان آموزشگاه درخت سبز، نخستین و برترین آزمون تخصصی ارزیابی زبان در شهر سقز است که از سال ۱۳۹۰ به‌صورت حرفه‌ای برگزار می‌شود. این آزمون سالانه یک‌بار برگزار شده و ویژه زبان‌آموزانی از سطح ۱ تا سطح ۵ طراحی شده است.
+        </p>
+        <p>
+            هدف از برگزاری این آزمون، سنجش دقیق مهارت‌های زبانی شامل مهارت‌های چهارگانه شنیداری، گفتاری، نوشتاری و درک مطلب براساس استانداردهای بین‌المللی است. آزمون جامع فرصتی است برای زبان‌آموزان تا سطح واقعی خود را ارزیابی کنند و مسیر یادگیری مؤثرتری را انتخاب نمایند.
+        </p>
+
+        <p>
+            آموزشگاه درخت سبز با سابقه‌ای درخشان در زمینه آموزش زبان‌های خارجی و بهره‌گیری از اساتید مجرب، از پیشگامان آموزش تخصصی زبان در منطقه است و آزمون جامع یکی از افتخارات و دستاوردهای مهم این مجموعه به‌شمار می‌رود.
+        </p>
+
+        <h3>سؤالات متداول درباره آزمون جامع</h3>
+
+        <h3>آزمون جامع آموزشگاه درخت سبز چیست؟</h3>
+        <p>
+            آزمون جامع زبان آموزشگاه درخت سبز یک آزمون استاندارد سالیانه است که برای ارزیابی سطح زبان‌آموزان در سطوح ۱ تا ۵ برگزار می‌شود. این آزمون اولین و معتبرترین آزمون شهر سقز در حوزه آموزش زبان می‌باشد.
+        </p>
+
+        <h3>چه کسانی می‌توانند در آزمون شرکت کنند؟</h3>
+        <p>
+            تمام زبان‌آموزانی که در سطوح ۱ تا ۵ آموزشگاه ثبت‌نام کرده‌اند یا در گذشته دوره‌ای گذرانده‌اند، می‌توانند در این آزمون شرکت کنند.
+        </p>
+
+        <h3>آزمون چند بار در سال برگزار می‌شود؟</h3>
+        <p>
+            این آزمون تنها یک‌بار در سال برگزار می‌شود و نتایج آن برای ارتقا سطح و دریافت گواهی رسمی مورد استفاده قرار می‌گیرد.
+        </p>
+
+        <h3>سطوح مختلف آزمون چگونه تعیین می‌شوند؟</h3>
+        <p>
+            آزمون شامل سؤالاتی متناسب با سطوح ۱ تا ۵ است و هر زبان‌آموز بر اساس سطح آموزشی خود، آزمون مخصوص به همان سطح را دریافت می‌کند.
+        </p>
+
+        <h3>آیا شرکت در آزمون الزامی است؟</h3>
+        <p>
+            بله، شرکت در آزمون برای تمامی زبان‌آموزان جهت ارتقا به سطح بعدی الزامی است و نقش مهمی در مسیر آموزشی آن‌ها دارد.
+        </p>
+
+        <h3>چگونه در آزمون شرکت کنم؟</h3>
+        <p>
+            برای شرکت در آزمون جامع، ابتدا باید مبلغ مشخصی به عنوان هزینه آزمون پرداخت نمایید. پس از پرداخت، نام شما در لیست شرکت‌کنندگان ثبت شده و کارت ورود به جلسه برای شما صادر خواهد شد.
+        </p>
+
+    </div> 
+</div>
+
+</section>
+
+            <section id="contact" class="content-section">
+                <div id="map">
+                
+                	<!-- How to change your own map point
+                           1. Go to Google Maps
+                           2. Click on your location point
+                           3. Click "Share" and choose "Embed map" tab
+                           4. Copy only URL and paste it within the src="" field below
+                    -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.4524134097733!2d46.266989675984185!3d36.240494199049806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40025bd2f2cac0d7%3A0x322506e2dc8efab3!2z2KLZhdmI2LLYtNqv2KfZhyDYstio2KfZhiDYr9ix2K7YqiDYs9io2LI!5e1!3m2!1sen!2sde!4v1763135041230!5m2!1sen!2sde" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+<div id="contact-content">
+    <div class="section-heading" style="text-align: center;">
+        <h1>تماس <em>با  ما</em></h1>
+    </div>
+
+    <!-- اطلاعات تماس ثابت -->
+    <div class="contact-info" style="text-align: center; margin-bottom: 40px;">
+        <p><strong>شماره تلفن:</strong>36210099</p>
+        <p><strong>ایمیل:</strong> info@greentreeenglish.ir</p>
+        <p><strong>آدرس:</strong> ایران ، کردستان ، سقز ، چهارراه آزادگان</p>
+        <p>
+            <strong>شبکه‌های اجتماعی:</strong> 
+            <a href="https://t.me/greentreeenglishcenter" target="_blank" style="margin:0 10px;">تلگرام</a> | 
+            <a href="https://instagram.com/green.tree.english.center" target="_blank" style="margin:0 10px;">اینستاگرام</a>
+        </p>
+    </div>
+
+    <!-- فرم تماس -->
+    <div class="section-content">
+        <form id="contact" action="#" method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <fieldset>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required>
+                    </fieldset>
+                </div>
+                <div class="col-md-4">
+                    <fieldset>
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required>
+                    </fieldset>
+                </div>
+                <div class="col-md-4">
+                    <fieldset>
+                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required>
+                    </fieldset>
+                </div>
+                <div class="col-md-12">
+                    <fieldset>
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required></textarea>
+                    </fieldset>
+                </div>
+                <div class="col-md-12">
+                    <fieldset>
+                        <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+            </section>
+<section class="footer" style="text-align: center;  background-color: #000000; font-size: 0.95em;">
+    <p style="text-align: center;">طراحی و توسعه این وب‌سایت توسط <a href="https://rasandesign.ir" target="_blank" style="text-decoration: none; color: #007bff;"><strong>راسان دیزاین</strong></a> انجام شده است. از همراهی شما سپاسگزاریم.</p>
+</section>
+
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
 </body>
 </html>

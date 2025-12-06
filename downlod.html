@@ -3,134 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دانلود اپلیکیشن</title>
-<style>
-  :root{
-    --green:#0aad62;
-    --green-dark:#063b24;
-    --text:#e7f7ef;
-    --card:#082a1b;
-    --glass:rgba(255,255,255,0.04);
-  }
-  body{
-    margin:0;
-    background:linear-gradient(145deg,#02140d,#063b24);
-    font-family:"Vazirmatn",Tahoma,sans-serif;
-    color:var(--text);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:20px;
-  }
-  .card{
-    width:100%;
-    max-width:480px;
-    background:var(--card);
-    padding:30px;
-    border-radius:18px;
-    border:1px solid rgba(255,255,255,0.05);
-    box-shadow:0 10px 40px rgba(0,0,0,0.4);
-    text-align:center;
-  }
-  h1{
-    margin:0 0 12px;
-    font-size:22px;
-  }
-  p{color:#b7d5c8;line-height:1.6;font-size:14.5px;margin-bottom:28px}
-  .btn{
-    width:100%;
-    padding:15px;
-    margin-bottom:14px;
-    border-radius:12px;
-    border:0;
-    font-size:16px;
-    font-weight:600;
-    cursor:pointer;
-    transition:.15s;
-  }
-  .btn:active{transform:scale(.97)}
-  .btn-android{
-    background:linear-gradient(90deg,#0aad62,#12ca77);
-    color:#fff;
-  }
-  .btn-ios{
-    background:transparent;
-    border:1px solid var(--green);
-    color:var(--green);
-  }
-  footer{
-    margin-top:20px;
-    font-size:12px;
-    color:#9bb8ac;
-  }
+<title>نصب وب اپلیکیشن روی Home Screen</title>
+  	<!-- BOOTSTRAP CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<!-- FONTAWESOME CSS -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+		<!-- OWL CAROUSEL CSS -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+		<!-- ANIMATE CSS -->
+		<link rel="stylesheet" href="css/animate.min.css" type="text/css" />
+		<!-- LIGHTBOX CSS -->
+		<link rel="stylesheet" href="css/lightbox.min.css" type="text/css" />
+		<!-- YTPLAYER CSS -->
+		<link rel="stylesheet" href="css/mb.YTPlayer.min.css" type="text/css" />
+		<!-- FLATICON CSS -->
+		<link rel="stylesheet" href="css/flaticon.css" type="text/css" />
+		<!-- BOOTSTRAP VALIDATOR CSS -->
+		<link rel="stylesheet" href="css/validator.min.css" type="text/css" />
+		<!-- THEME STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!-- Latest IE rendering engine & Chrome Frame Meta Tags -->
+		<!--[if IE]>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+		<![endif]-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papapapapapapa..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link rel="icon" href="logo2.png" sizes="32x32">
+    <link rel="icon" href="logo2.png" sizes="64x64">
+    <link rel="icon" href="logo2.png" sizes="96x96">
+    <link rel="icon" href="logo2.png" sizes="128x128">
+    <link rel="icon" href="logo2.png" sizes="192x192">
+    <link rel="icon" href="logo2.png" sizes="256x256">
+    <link rel="icon" href="logo2.png" sizes="512x512">
 
-  /* modal */
-  .modal-bg{
-    position:fixed;inset:0;background:rgba(0,0,0,0.6);
-    display:none;align-items:center;justify-content:center;
-    padding:20px;z-index:50;
-  }
-  .modal{
-    background:var(--card);
-    padding:22px;border-radius:14px;
-    max-width:420px;width:100%;
-    border:1px solid var(--glass);
-    animation:show .25s ease;
-  }
-  @keyframes show{from{opacity:0;transform:scale(.94)}}
-  .modal h2{margin:0 0 8px;font-size:18px}
-  .step{background:var(--glass);padding:10px 12px;border-radius:8px;margin:8px 0;font-size:14px;line-height:1.45}
-  .close-btn{
-    width:100%;padding:12px;margin-top:14px;border-radius:10px;
-    background:var(--green);color:#fff;border:0;font-weight:600;cursor:pointer;
-  }
+    <!-- آیکون‌ها برای اپل -->
+    <link rel="apple-touch-icon" href="logo2.png" sizes="180x180">
+    
+    <!-- آیکون‌های مناسب اندروید -->
+    <link rel="icon" href="logo2.png" sizes="192x192">
+    <link rel="manifest" href="manifest.json">
+<style>
+:root{
+  --green:#0aad62;
+  --text:#e7f7ef;
+  --card:#082a1b;
+  --glass:rgba(255,255,255,0.04);
+}
+body{
+  margin:0;
+  background:linear-gradient(145deg,#02140d,#063b24);
+  font-family:"Vazirmatn",Tahoma,sans-serif;
+  color:var(--text);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding:20px;
+}
+.card{
+  width:100%;
+  max-width:480px;
+  background:var(--card);
+  padding:30px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.05);
+  box-shadow:0 10px 40px rgba(0,0,0,0.4);
+  text-align:center;
+}
+h1{margin:0 0 12px;font-size:22px;}
+p{color:#b7d5c8;line-height:1.6;font-size:14.5px;margin-bottom:28px;}
+.btn{
+  width:100%;
+  padding:15px;
+  margin-bottom:14px;
+  border-radius:12px;
+  border:0;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.15s;
+}
+.btn:active{transform:scale(.97)}
+.btn-android{background:linear-gradient(90deg,#0aad62,#12ca77);color:#fff;}
+.btn-ios{background:transparent;border:1px solid var(--green);color:var(--green);}
+.ad-section{
+  background:var(--glass);
+  padding:12px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.1);
+  margin-bottom:20px;
+  font-size:13px;
+  color:#b7d5c8;
+}
+footer{
+  margin-top:20px;
+  font-size:12px;
+  color:#9bb8ac;
+}
+.modal-bg{
+  position:fixed;inset:0;background:rgba(0,0,0,0.6);
+  display:none;align-items:center;justify-content:center;
+  padding:20px;z-index:50;
+}
+.modal{
+  background:var(--card);
+  padding:22px;border-radius:14px;
+  max-width:420px;width:100%;
+  border:1px solid var(--glass);
+  animation:show .25s ease;
+}
+@keyframes show{from{opacity:0;transform:scale(.94)}}
+.modal h2{margin:0 0 8px;font-size:18px}
+.step{background:var(--glass);padding:10px 12px;border-radius:8px;margin:8px 0;font-size:14px;line-height:1.45}
+.close-btn{
+  width:100%;padding:12px;margin-top:14px;border-radius:10px;
+  background:var(--green);color:#fff;border:0;font-weight:600;cursor:pointer;
+}
 </style>
 </head>
 <body>
 
 <div class="card">
-  <h1>دانلود اپلیکیشن</h1>
-  <p>لطفاً نسخه مخصوص دستگاه خود را انتخاب کنید.</p>
+  <h1>نصب وب اپلیکیشن</h1>
+  <p>نسخه مخصوص دستگاه خود را انتخاب کنید و مراحل نصب را دنبال کنید.</p>
 
-  <button class="btn btn-android" id="btnAndroid">📱 دانلود برای Android</button>
-  <button class="btn btn-ios" id="btnIOS">🍏 دانلود برای iOS</button>
+  <div class="ad-section">
+    🔹 وب اپلیکیشن سریع و سبک است و بدون اپ استور روی گوشی شما اجرا می‌شود.
+  </div>
 
-<a href="rasandesign.ir">  <footer>© طراحی شده توسط Rasandesign</footer></a>
+  <button class="btn btn-android" id="btnAndroid">📱 آموزش نصب روی Android</button>
+  <button class="btn btn-ios" id="btnIOS">🍏 آموزش نصب روی iOS</button>
+
+  <footer>© طراحی شده توسط <a href="https://rasandesign.ir" style="color:#9bb8ac;text-decoration:none;">Rasandesign</a></footer>
 </div>
 
-<!-- modal -->
+<!-- Modal آموزش Android -->
+<div class="modal-bg" id="androidModal">
+  <div class="modal">
+    <h2>نصب وب اپ روی Android</h2>
+    <div class="step">۱- در مرورگر Chrome یا Edge گوشی، وقتی سایت باز شد، روی منوی سه نقطه بالا سمت راست بزن.</div>
+    <div class="step">۲- گزینه <strong>Add to Home Screen</strong> یا «افزودن به صفحه اصلی» را انتخاب کن.</div>
+    <div class="step">۳- نام اپلیکیشن را تأیید کن و روی <strong>Add</strong> بزن.</div>
+    <div class="step">۴- حالا آیکون وب اپ روی هوم اسکرین گوشی شما ظاهر شده است.</div>
+    <button class="close-btn" id="closeAndroid">متوجه شدم / بستن</button>
+  </div>
+</div>
+
+<!-- Modal آموزش iOS -->
 <div class="modal-bg" id="iosModal">
   <div class="modal">
-    <h2>نصب روی iPhone / iOS</h2>
-
-    <div class="step">۱- هنگامی که سایت باز شد، پایین Safari روی دکمه <strong>اشتراک‌گذاری</strong> (🔼 مربع با فلش رو به بالا) بزن.</div>
-    <div class="step">۲- گزینه <strong>Add to Home Screen</strong> یا «افزودن به صفحه اصلی» را انتخاب کن.</div>
-    <div class="step">۳- روی دکمه <strong>Add</strong> بزن تا آیکون روی صفحه موبایل اضافه شود.</div>
-
-    <button class="close-btn" id="continueIOS">متوجه شدم / ادامه</button>
+    <h2>نصب وب اپ روی iOS</h2>
+    <div class="step">۱- وقتی سایت باز شد، پایین Safari روی دکمه <strong>اشتراک‌گذاری</strong> (🔼 مربع با فلش رو به بالا) بزن.</div>
+    <div class="step">۲- گزینه <strong>افزودن به صفحه اصلی</strong> (Add to Home Screen) را انتخاب کن.</div>
+    <div class="step">۳- روی دکمه <strong>Add</strong> بزن تا آیکون وب اپ روی هوم اسکرین اضافه شود.</div>
+    <div class="step">۴- حالا وب اپ مانند اپلیکیشن‌های دیگر قابل استفاده است.</div>
+    <button class="close-btn" id="closeIOS">متوجه شدم / بستن</button>
   </div>
 </div>
 
 <script>
-const androidLink = "https://t.me/Greentreeenglish_bot";
-const iosLink = "https://greentreeenglish.ir/appweb/";
+// نمایش modal Android
+document.getElementById("btnAndroid").addEventListener("click", ()=>{
+    document.getElementById("androidModal").style.display="flex";
+});
 
-document.getElementById("btnAndroid")
- .addEventListener("click", () => window.location.href = androidLink);
+// نمایش modal iOS
+document.getElementById("btnIOS").addEventListener("click", ()=>{
+    document.getElementById("iosModal").style.display="flex";
+});
 
-const modal = document.getElementById("iosModal");
-document.getElementById("btnIOS")
- .addEventListener("click", () => modal.style.display = "flex");
+// بستن modal Android
+document.getElementById("closeAndroid").addEventListener("click", ()=>{
+    document.getElementById("androidModal").style.display="none";
+});
 
-document.getElementById("continueIOS")
- .addEventListener("click", () => {
-    modal.style.display = "none";
-    window.open(iosLink, "_blank");
- });
+// بستن modal iOS
+document.getElementById("closeIOS").addEventListener("click", ()=>{
+    document.getElementById("iosModal").style.display="none";
+});
 
-modal.addEventListener("click", e => {
-  if(e.target === modal) modal.style.display="none";
+// بستن modal با کلیک خارج از پنجره
+document.getElementById("androidModal").addEventListener("click", e=>{
+    if(e.target===document.getElementById("androidModal")) document.getElementById("androidModal").style.display="none";
+});
+document.getElementById("iosModal").addEventListener("click", e=>{
+    if(e.target===document.getElementById("iosModal")) document.getElementById("iosModal").style.display="none";
 });
 </script>
 
